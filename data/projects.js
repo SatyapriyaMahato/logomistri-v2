@@ -7,7 +7,7 @@ export const projects = [
     title: "ByTheLeashK9",
     client: "By The Leash",
     category: "Logo Design and Branding",
-    thumbnail: "/images/projects/bytheleashk9/Bytheleashk9-branding-thumbnail-300x300.jpg",
+    thumbnail: "/images/projects/bytheleashk9/Bytheleashk9-Branding-thumbnail-300x300.jpg",
     description: "Full branding project...",
     fullDescription: "Extended description...",
     keywords: ["Bold", "Natural", "Friendly", "Professional"],
