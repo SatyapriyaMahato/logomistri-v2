@@ -25,19 +25,19 @@ export const projects = [
     id: "different-view",
     title: "Different View",
     category: "Real Estate",
-    thumbnail: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=800",
+    // thumbnail: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=800",
     // You can add more details for this project here later
   },
   {
     id: "pricep-cross",
     title: "Pricep Cross",
     category: "Industrial",
-    thumbnail: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+    // thumbnail: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: "macrochi",
     title: "Macrochi",
     category: "Corporate",
-    thumbnail: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+    // thumbnail: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
   }
 ];
