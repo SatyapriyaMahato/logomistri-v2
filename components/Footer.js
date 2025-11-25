@@ -11,7 +11,7 @@ export default function Footer() {
       </div>
       <div className="text-gray-500 text-sm flex flex-col gap-4">
         <p className="hover:text-gray-300 cursor-pointer">Terms And Conditions | Privacy Policy</p>
-        <p>Copyright © 2024 Logomistri</p>
+        <p>Copyright © 2025 Logomistri</p>
       </div>
     </footer>
   );

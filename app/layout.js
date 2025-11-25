@@ -5,7 +5,13 @@ import Footer from '@/components/Footer';
 export const metadata = {
   title: 'Logomistri | Adorning Brand With Design',
   description: 'Professional Logo Design & Branding Projects',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
