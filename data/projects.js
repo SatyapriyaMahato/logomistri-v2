@@ -74,7 +74,7 @@ export const projects = [
     gallery: Array.from({ length: 16 }, (_, i) => {
       const num = i + 1;
       const ext = num <= 11 ? "png" : "jpg";
-      return `/images/projects/macrochi/Macrochi-branding-image-${num}.${ext}`;
+      return `/images/projects/macrochi/Macrochi-Branding-image-${num}.${ext}`;
     })
 
   },
@@ -93,7 +93,7 @@ export const projects = [
     gallery: Array.from({ length: 20 }, (_, i) => {
       const num = i + 1;
       const ext = num <= 15 ? "png" : "jpg";
-      return `/images/projects/ttc/TTC-branding-image-${num}.${ext}`;
+      return `/images/projects/ttc/TTC-Branding-image-${num}.${ext}`;
     })
 
   },
