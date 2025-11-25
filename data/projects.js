@@ -5,14 +5,21 @@ export const projects = [
   {
     id: "bytheleashk9",
     title: "ByTheLeashK9",
-    category: "Branding",
-    thumbnail: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800",
-    client: "Jeanette Briones",
-    role: "Dog Trainer, ByTheLeashK9",
-    heroImage: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    description: "ByTheLeashK9 is a company based in San Antonio, Texas, USA...",
-    fullDescription: "The client wanted a clean, vintage, and rustic look. They wanted a logo that would stand out and be memorable. We decided to go with a circular badge style logo with a dog illustration in the center.",
-    keywords: ["RUSTIC", "MODERN", "BOLD", "TRUST"]
+    client: "By The Leash",
+    category: "Logo Design and Branding",
+    thumbnail: "/images/projects/bytheleashk9/Bytheleashk9-branding-thumbnail-300x300.jpg",
+    description: "Full branding project...",
+    fullDescription: "Extended description...",
+    keywords: ["Bold", "Natural", "Friendly", "Professional"],
+
+    heroImage: "/images/projects/bytheleashk9/Bytheleashk9-Branding-image-0.jpg",
+
+    gallery: Array.from({ length: 14 }, (_, i) => {
+      const num = i + 1;
+      const ext = num <= 8 ? "png" : "jpg";
+      return `/images/projects/bytheleashk9/Bytheleashk9-Branding-image-${num}.${ext}`;
+    })
+
   },
   {
     id: "different-view",

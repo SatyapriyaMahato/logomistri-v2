@@ -10,16 +10,30 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Smooth fade + scale on scroll (Apple-style) */
+.showcase-image {
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  transition: all 0.8s ease-out;
+}
+
+.showcase-image.visible {
+  opacity: 1;
+  transform: translateY(0px) scale(1);
+}
+
+.showcase-image.visible {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1.02) !important;
 }
