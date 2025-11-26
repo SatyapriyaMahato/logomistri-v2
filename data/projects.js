@@ -69,7 +69,7 @@ export const projects = [
     fullDescription: "Extended description...",
     keywords: ["Bold", "Natural", "Friendly", "Professional"],
 
-    heroImage: "/images/projects/macrochi/Macrochi-Branding-image-10.jpg",
+    heroImage: "/images/projects/macrochi/Macrochi-Branding-image-13.jpg",
 
     gallery: Array.from({ length: 16 }, (_, i) => {
       const num = i + 1;
