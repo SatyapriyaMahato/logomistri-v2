@@ -5,6 +5,7 @@ import {
   FileText, PenTool, RefreshCw, Package, User, DollarSign,
   Handshake, Heart, Sun, Moon, ArrowRight, CheckCircle, Mail
 } from 'lucide-react';
+import { useTheme } from "@/context/ThemeContext";
 
 // --- Utility Components & Hooks ---
 
@@ -128,7 +129,9 @@ const HeroBackground = ({ darkMode }) => {
 };
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+  // const [darkMode, setDarkMode] = useState(true);
+  const { darkMode, toggleTheme } = useTheme();
+
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -144,7 +147,7 @@ export default function Home() {
     });
   };
 
-  const toggleTheme = () => setDarkMode(!darkMode);
+  // toggleTheme = () => setDarkMode(!darkMode);
 
   // Dynamic Styles
   const bgMain = darkMode ? 'bg-black' : 'bg-gray-50';
