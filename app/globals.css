@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "leaflet/dist/leaflet.css";
 
 :root {
   --foreground-rgb: 255, 255, 255;
@@ -125,4 +126,82 @@ html {
 
 .animate-ping-slow {
   animation: ping-slow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Leaflet Attribution Styling */
+.leaflet-control-attribution {
+  font-size: 10px;
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.leaflet-control-attribution a {
+  color: rgba(197, 160, 89, 0.8);
+  /* your gold */
+  text-decoration: none;
+}
+
+.leaflet-control-attribution a:hover {
+  text-decoration: underline;
+}
+
+.leaflet-container {
+  transition: transform 0.4s ease;
+}
+
+.leaflet-container:hover {
+  transform: scale(1.02);
+}
+
+.leaflet-control-zoom {
+  border: none !important;
+}
+
+.leaflet-control-zoom a {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: white !important;
+  border-radius: 8px !important;
+}
+
+/* Tooltip styles */
+
+.map-label-dark {
+  background: rgba(0, 0, 0, 0.85);
+  color: #C5A059;
+  border: none;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.08em;
+}
+
+.map-label-light {
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  border-radius: 6px;
+}
+
+/* Tooltip arrow fix */
+.leaflet-tooltip-top:before {
+  border-top-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Pulse animation for marker */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }

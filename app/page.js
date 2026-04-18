@@ -6,6 +6,11 @@ import {
   Handshake, Heart, Sun, Moon, ArrowRight, CheckCircle, Mail
 } from 'lucide-react';
 import { useTheme } from "@/context/ThemeContext";
+import dynamic from "next/dynamic";
+
+const ContactMap = dynamic(() => import("@/components/ContactMap"), {
+  ssr: false,
+});
 
 // --- Utility Components & Hooks ---
 
@@ -185,14 +190,14 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-8 leading-tight tracking-tight">
-            WE CRAFT LOGOS FOR <br />
+            WE CRAFT MEANINGFUL <br />
             <span className={`bg-clip-text text-transparent bg-gradient-to-r ${darkMode ? 'from-white via-gray-200 to-gray-500' : 'from-black via-gray-700 to-gray-500'}`}>
-              SMALL BUSINESSES
+              VISUAL IDENTITIES
             </span>
           </h1>
 
           <p className={`mb-12 max-w-2xl mx-auto text-lg md:text-xl font-light ${textMuted}`}>
-            Logomistri creates timeless visual identities that elevate brands with simplicity, clarity, and meaning.
+            Logomistri builds brands that speak before you say a word — logos, identity systems, and every visual detail, crafted with purpose.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5">
@@ -423,16 +428,7 @@ export default function Home() {
 
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-0 shadow-2xl rounded-lg overflow-hidden">
             <div className="md:w-1/2 relative h-[400px] md:h-auto">
-              <img
-                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop"
-                alt="Contact"
-                className="w-full h-full object-cover filter brightness-[0.6]"
-              />
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-white p-8 bg-black/30">
-                <Mail size={48} className="mb-4 text-[#C5A059]" />
-                <h3 className="text-2xl font-bold">Let's Create Together</h3>
-                <p className="mt-2 text-gray-200">Start your brand journey today.</p>
-              </div>
+              <ContactMap />
             </div>
 
             <div className={`md:w-1/2 p-12 flex flex-col gap-6 ${darkMode ? 'bg-[#111]' : 'bg-gray-100'}`}>
